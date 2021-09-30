@@ -1,0 +1,15 @@
+// extensions
+@import './extensions/variables';
+// vendor
+// base
+@import './base/reset';
+@import './base/animations';
+@import './base/typography';
+// components
+@import '../../UI/Loader/loader';
+@import '../../UI/Modal/modal';
+@import '../../UI/Backdrop/backdrop';
+@import '../../UI/Alert/alert';
+@import '../../components/NavBar/nav-bar';
+@import '../../components/Header/header';
+@import '../../components/Movies/movies';

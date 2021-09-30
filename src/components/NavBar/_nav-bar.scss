@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 8px;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 6;
+  transition: 1s;
+  &.nav--scroll {
+    background: $color-primary;
+  }
+  &__logo {
+    img {
+      width: 10rem;
+      object-fit: contain;
+    }
+  }
+  &__avatar {
+    img {
+      width: 4rem;
+      object-fit: contain;
+    }
+  }
+}

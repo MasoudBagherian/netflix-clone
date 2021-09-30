@@ -1,0 +1,44 @@
+.alert {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin: 4rem auto;
+  width: 80%;
+  max-width: 40rem;
+  border-radius: 5px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: $color-alert;
+  }
+  &__icon {
+    display: flex;
+    color: $color-alert;
+    margin-right: 1rem;
+    svg {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  &__content {
+  }
+  &__type {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+  }
+  &__text {
+    color: #666;
+    font-size: 1.6rem;
+  }
+}

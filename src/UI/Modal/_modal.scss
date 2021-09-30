@@ -1,0 +1,20 @@
+.modal {
+  position: fixed;
+  width: 80%;
+  max-width: 40rem;
+  max-height: 80%;
+  overflow-y: auto;
+  font-weight: bold;
+  top: 0;
+  left: 50%;
+  transform: translate3d(-50%, -100%, 0);
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  z-index: $z-index-modal;
+  transition: all 0.3s;
+  &.modal--show {
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
