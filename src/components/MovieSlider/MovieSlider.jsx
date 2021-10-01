@@ -166,10 +166,13 @@ const MovieSlider = ({ title, movies, poster }) => {
   useEffect(() => {
     configSlider();
     window.addEventListener('resize', handleWindowResize);
-    window.addEventListener('contextmenu', removeContextMenu);
+    containerRef.current.addEventListener('contextmenu', removeContextMenu);
     return () => {
       window.removeEventListener('resize', handleWindowResize);
-      window.removeEventListener('contextmenu', removeContextMenu);
+      containerRef.current.removeEventListener(
+        'contextmenu',
+        removeContextMenu
+      );
     };
   }, []);
 
