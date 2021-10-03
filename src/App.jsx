@@ -58,7 +58,7 @@ const App = () => {
     <>
       {loading ? <Loader /> : null}
       <Modal
-        message="Fetching movies form MTDB api failed."
+        message="Fetching movies form TMDB api failed."
         show={showModal ? true : false}
         handleBackdropClick={hideModal}
       />
